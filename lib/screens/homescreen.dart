@@ -42,6 +42,9 @@ class _HomescreenState extends State<Homescreen> {
     ]);
   }
   questions = objectbox.questionsBox.getAll();
+  setState(() {
+    questions = questions;
+  });
   developer.log("Loaded questions: ${questions.length}");
 }
 
